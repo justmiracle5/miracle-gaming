@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miracle Gaming</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #070711;
+      color: white;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 20px;
+      background: rgba(7, 7, 17, 0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #00e5ff;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 12px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 100px 20px 40px;
+      background: radial-gradient(circle at top, #18244d, #070711 65%);
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 10vw, 80px);
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #00e5ff;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 25px;
+      background: #00e5ff;
+      color: #05050b;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 25px;
+    }
+
+    .title {
+      text-align: center;
+      color: #00e5ff;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      color: #bbb;
+      font-size: 18px;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .game {
+      background: #121222;
+      border: 1px solid #292943;
+      border-radius: 15px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .game:hover {
+      border-color: #00e5ff;
+      transform: translateY(-5px);
+    }
+
+    .icon {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .game h3 {
+      color: #00e5ff;
+      margin-bottom: 10px;
+    }
+
+    .game p {
+      color: #999;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat {
+      background: #121222;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .stat h3 {
+      color: #00e5ff;
+      font-size: 32px;
+    }
+
+    .stat p {
+      color: #999;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #040409;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">MIRACLE 🎮</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#games">Games</a>
+      <a href="#stats">Stats</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>I'm <span>Miracle</span> 🎮</h1>
+      <p>Gamer • Creator • Future Legend</p>
+
+      <a class="button" href="#games">
+        Enter My Gaming World
+      </a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2 class="title">ABOUT ME</h2>
+
+    <p class="about">
+      Welcome to my website! I'm Miracle.
+      I love gaming, discovering new games and having fun.
+      This is my personal corner of the internet where I can
+      share my gaming world and the things I enjoy.
+    </p>
+  </section>
+
+  <section id="games">
+    <h2 class="title">MY GAMES 🎮</h2>
+
+    <div class="games">
+
+      <div class="game">
+        <div class="icon">⚽</div>
+        <h3>Football</h3>
+        <p>Competition, skills and goals.</p>
+      </div>
+
+      <div class="game">
+        <div class="icon">🔫</div>
+        <h3>Action</h3>
+        <p>Fast action and exciting challenges.</p>
+      </div>
+
+      <div class="game">
+        <div class="icon">🏎️</div>
+        <h3>Racing</h3>
+        <p>Speed, competition and winning.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2 class="title">GAMING STATS 🏆</h2>
+
+    <div class="stats">
+
+      <div class="stat">
+        <h3>∞</h3>
+        <p>Gaming Hours</p>
+      </div>
+
+      <div class="stat">
+        <h3>🎮</h3>
+        <p>Gamer</p>
+      </div>
+
+      <div class="stat">
+        <h3>🏆</h3>
+        <p>Future Wins</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">THANKS FOR VISITING ❤️</h2>
+
+    <p class="about">
+      More gaming content coming soon!
+    </p>
+  </section>
+
+  <footer>
+    © 2026 Miracle Gaming
+  </footer>
+
+</body>
+</html>
