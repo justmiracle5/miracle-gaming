@@ -471,6 +471,17 @@
   <footer>
     © 2026 Miracle Gaming
   </footer>
+  <script>
+function showSection(id) {
+  document.querySelectorAll("section").forEach(section => {
+    section.style.display = "none";
+  });
 
+  document.getElementById(id).style.display = "block";
+  window.scrollTo(0, 0);
+}
+
+showSection("home");
+</script>
 </body>
 </html>
